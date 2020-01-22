@@ -1,8 +1,25 @@
 {% extends "library/base.html" %}
 {% block content %}
 {% load static %}
-<link href="{% static 'library/css/lists.css' %}" type="text/css" rel="stylesheet">
-
+{% comment %} <link href="{% static 'library/css/lists.css' %}" type="text/css" rel="stylesheet"> {% endcomment %}
+<style>
+    #Upper-section {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 0%;
+    }
+    .title {
+        font-family: "lato";
+        text-align: center;
+        font-size: 6rem;
+        color: #ffffff;
+        text-shadow: 3px 4px #000;
+        margin-top: 0px;
+        background-image: url("../../css/img/library.png");
+        height: 450px;
+    }
+</style>
 <div id="page-container">
     <div id="content-wrap">
         <section>
@@ -11,7 +28,7 @@
                 <p class="title">Бүх номнууд</p>
             </nav>
             <div class="container justify-content-center">
-                <h1 class="display-1 mb-0 text-center" style="margin-bottom: 40px !important; font-size: 60px; color:#172b4d">Ангилал</h1>
+                <h1 class="display-1 mb-0 text-center">Ангилал</h1>
                 <div class="row "> 
                     {% for category in categories %}
                         {% if category.name == "Компьютер" or category.name == "Философи ба сэтгэлзүй" or category.name == "Нийгмийн шинжлэх ухаан" %}
@@ -50,7 +67,7 @@
                 </div>
                 <div class="row"> 
                     {% for category in categories %}
-                        {% if category.name == "Урлаг" or category.name == "Уран зохиол" or category.name == "Түүх газарзүй" %}
+                        {% if category.name == "Урлаг ба Спорт" or category.name == "Уран зохиол" or category.name == "Түүх газарзүй" %}
                             <div class="col">
                                 <div class="col-md-12">
                                     <div class="card card-pricing card bg-gradient-default border-0 zoom-in shadow-lg rounded border-0 text-center mb-4">
@@ -84,7 +101,7 @@
                         {% endif %}
                     {% endfor %}
                 </div>
-                
+            </div>
             </section>
         </div>
     </div>

@@ -25,7 +25,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = ['www.elibrary.network', 'elibrary.network', 'http://webapp-714579.pythonanywhere.com/']
+ALLOWED_HOSTS = ['www.elibrary.network', 'elibrary.network', 'http://webapp-714579.pythonanywhere.com/', 'localhost']
 
 
 # Application definition

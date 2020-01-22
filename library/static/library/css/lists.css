@@ -16,9 +16,9 @@
 .row {
   margin-left: 0px;
   margin-right: 0px;
-  width: 1300px;
+  width: 100%;
   vertical-align: middle;
-  height: 200px;
+  height: 5vh;
 }
 .col {
   display: table-cell;
@@ -37,7 +37,7 @@
 .title {
   font-family: "lato";
   text-align: center;
-  font-size: 200px;
+  font-size: 6rem;
   color: #ffffff;
   text-shadow: 3px 4px #000;
   margin-top: 0px;
